@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build(job: 'Maven Build', propagate: true)
+        build(job: 'mvn install', propagate: true)
       }
     }
   }
